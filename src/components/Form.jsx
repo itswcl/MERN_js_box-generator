@@ -4,6 +4,11 @@ const Form = (props) => {
     const [color, setColor] = useState("")
     const [size, setSize] = useState("")
 
+    // const [infoError, setInfoError] = useState({
+    //     colorError: "",
+    //     sizeError: "",
+    // })
+
     const addColor = (e) => {
         setColor(e.target.value);
     }
@@ -20,6 +25,7 @@ const Form = (props) => {
         setSize("");
     }
 
+
     return (
         <div className="container">
             <form onSubmit={handleSubmit} className='form-group'>
@@ -30,7 +36,7 @@ const Form = (props) => {
                         value={color}
                         type="text"
                         name="color"
-                        placeholder='enter a color'/>
+                        placeholder='enter a color' />
                 </p>
 
                 <p>Size
@@ -40,7 +46,7 @@ const Form = (props) => {
                         value={size}
                         type="text"
                         name="color"
-                        placeholder='enter size'/>
+                        placeholder='enter size' />
                 </p>
 
                 <input className='btn btn-success' type="submit" value="Add" />
