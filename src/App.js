@@ -7,19 +7,21 @@ import Display from './components/Display';
 
 function App() {
   const [colorInfo, setColorInfo] = useState({
-    colors: []
+    colors: [],
+    sizes: []
   })
 
-  const colorReceived = (e) => {
+  const colorReceived = (color, size) => {
     setColorInfo({
-      colors : [...colorInfo.colors, e]
+      colors : [...colorInfo.colors, color],
+      sizes : [...colorInfo.sizes, size]
     })
   }
 
   return (
     <div className="App">
-      <Form onNewColor={colorReceived} />
-      <Display colors={colorInfo.colors} />
+      <Form onNewColor={colorReceived}/>
+      <Display colors={colorInfo.colors} sizes={colorInfo.sizes}/>
     </div>
   );
 }

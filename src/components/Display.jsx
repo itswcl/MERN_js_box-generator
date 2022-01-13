@@ -15,8 +15,8 @@ const Display = (props) => {
                                 key={i}
                                 style={{
                                     backgroundColor: color,
-                                    width: "55px",
-                                    height: "55px"
+                                    width: props.sizes[i] + "px",
+                                    height: props.sizes[i] + "px"
                                 }}>
                             </div>
                         )
