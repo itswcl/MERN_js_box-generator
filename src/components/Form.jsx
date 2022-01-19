@@ -34,6 +34,7 @@ const Form = (props) => {
                         className='form-control text-center'
                         onChange={addColor}
                         value={color}
+                        // we can put type="color" to have color option on page
                         type="text"
                         name="color"
                         placeholder='enter a color' />

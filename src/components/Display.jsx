@@ -5,8 +5,7 @@ const Display = (props) => {
 
     return (
         <>
-            {JSON.stringify(props)}
-            <p>Color</p>
+            {/* {JSON.stringify(props)} */}
             <div className='d-flex flex-wrap'>
                 {
                     props.colors.map((color, i) => {
